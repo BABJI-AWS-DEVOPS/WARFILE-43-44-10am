@@ -1,13 +1,13 @@
 node('master') 
 {
-    stage('CD-S1-Git') 
+    stage('CD-S1-Git-payment') 
 	{
       git 'https://github.com/BABJI-AWS-DEVOPS/BATCH45VENUWARFILE.git'
     }
 }
 node('master') 
 {
-    stage('CD-S2-Maven') 
+    stage('CD-S2-Maven-payment') 
 	{
     sh 'mvn package'
     }
